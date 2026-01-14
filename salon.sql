@@ -173,27 +173,21 @@ ALTER TABLE ONLY public.services ALTER COLUMN service_id SET DEFAULT nextval('pu
 -- Data for Name: appointments; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-COPY public.appointments (appointment_id, customer_id, service_id, "time") FROM stdin;
-\.
 
 
 --
 -- Data for Name: customers; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-COPY public.customers (customer_id, name, phone) FROM stdin;
-\.
 
 
 --
 -- Data for Name: services; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-COPY public.services (service_id, name) FROM stdin;
-1	cut
-2	color
-3	perm
-\.
+INSERT INTO public.services VALUES (1, 'cut');
+INSERT INTO public.services VALUES (2, 'color');
+INSERT INTO public.services VALUES (3, 'perm');
 
 
 --
